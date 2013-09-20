@@ -89,6 +89,22 @@
 
     *.yourdomain.com => heroku.com
 
+## Import/Export PG Backups
+
+   heroku pgbackups:capture # captures the current state of database
+   curl -o nameoffile.dump 'heroku pgbackups:url [url code here] --app [appnamehere]' # if you have multiple heroku instances
+   pg_restore --verbose --clean --no-acl --no-owner -h localhost -U myuser -d mydb nameoffile.dump
+
+   check current urls: heroku pgbackups
+   destroy a backup: heroku pgbackups:destroy [url code here]
+
+## Setting up SSH
+
+   ssh-keygen -t rsa -C "youremail@here.com" -f  ~/.ssh/id_rsa_heroku
+   ssh-add ~/.ssh/id_rsa_heroku
+   heroku keys:add ~/.ssh/id_rsa_heroku.pub
+   git push heroku master
+
 
 ## References:
 
