@@ -76,7 +76,6 @@
 
  public/uploads
  *.un~
- Gemfile.lock
  .zeus.sock
 
  /db/backups/
