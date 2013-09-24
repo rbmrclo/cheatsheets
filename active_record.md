@@ -4,7 +4,7 @@
 <p> - Creates a table called name and makes the table object available to a block that can then add columns to it, following the same format as add_column. See example above. The options hash is for fragments like "DEFAULT CHARSET=UTF-8" that are appended to the create table definition. </p>
  
 2. ```drop_table(name)```
-<p> - Drops the table called name.</p>
+<p> - Drops the table called name. </p>
  
 3. ```change_table(name, options)```
 <p> - Allows to make column alterations to the table called name. It makes the table object available to a block that can then add/remove columns, indexes or foreign keys to it.</p>
