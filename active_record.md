@@ -1,5 +1,6 @@
-# ActiveRecord::Migration
+# ActiveRecord
  
+### Migration
 1. ```create_table(name, options)```
 <p> - Creates a table called name and makes the table object available to a block that can then add columns to it, following the same format as add_column. See example above. The options hash is for fragments like "DEFAULT CHARSET=UTF-8" that are appended to the create table definition. </p>
 
@@ -32,3 +33,19 @@
  
 11. ```remove_index(table_name, name: index_name)```
 <p> - Removes the index specified by index_name. </p>
+
+### Stuff
+
+1. Redo a migration
+<br/>
+  ```rake db:migrate:redo VERSION=[VERSION NUMBER HERE]```
+
+2. Drop a table via console
+<br/>
+ ```ActiveRecord::Migration.drop_table(:table_name_here)```
+
+3. See all tables
+<br/>
+``` ActiveRecord::Base.connection.tables ```
+
+

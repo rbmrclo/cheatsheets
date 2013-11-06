@@ -1,0 +1,95 @@
+source 'https://rubygems.org'
+
+  gem 'rails', '4.0.0'
+
+  # User pg as database
+  gem 'pg'
+
+  # Use SCSS for stylesheets
+  gem 'sass-rails', '~> 4.0.0'
+
+  # Use Uglifier as compressor for JavaScript assets
+  gem 'uglifier', '>= 1.3.0'
+
+  # Use CoffeeScript for .js.coffee assets and views
+  gem 'coffee-rails', '~> 4.0.0'
+
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  # gem 'therubyracer', platforms: :ruby
+
+  # Use jquery as the JavaScript library
+  gem 'jquery-rails'
+
+  # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+  gem 'turbolinks'
+
+  # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+  gem 'jbuilder', '~> 1.2'
+
+  group :doc do
+    # bundle exec rake doc:rails generates the API under doc/api.
+    gem 'sdoc', require: false
+  end
+
+  group :development do
+    gem 'haml-rails', '>= 0.3.5'
+    gem 'rspec-rails', '>= 2.12.2'
+    gem 'factory_girl_rails', '>= 4.2.0'
+    gem 'quiet_assets', '>= 1.0.1'
+    gem 'awesome_print'
+  end
+
+  group :test do
+    gem 'rspec-rails', '>= 2.12.2'
+    gem 'database_cleaner', '>= 0.9.1'
+    gem 'capybara', '>= 2.0.2'
+    gem 'factory_girl_rails', '>= 4.2.0'
+  end
+
+  gem 'haml', '>= 3.1.7'
+  gem 'devise', '>= 2.2.3'
+  gem 'rails_admin'
+  gem 'cancan'
+  gem 'simple_form'
+  gem 'figaro'
+
+  # Omniauth
+  # gem 'omniauth'
+  # gem 'omniauth-facebook'
+
+  # If we need an uploader
+  # gem 'mini_magick'
+  # gem 'fog'
+  # gem 'carrierwave'
+
+  # For Graphs
+  # gem 'nvd3-rails'
+
+  # For scheduling
+  # gem 'resque'
+  # gem 'resque-scheduler', :require => 'resque_scheduler'
+
+  # gem 'gibbon' # Mailchimp Wrapper
+  # gem 'httparty'
+
+  # BOOTSTRAP FRONT END STACK
+  gem 'therubyracer'
+  gem 'less-rails'
+  gem 'twitter-bootstrap-rails'
+
+  # UI artifacts
+  gem 'font-awesome-rails'
+  gem 'google-webfonts'
+  gem 'vex_rails'
+
+  # rack-zippy replaces the ActionDispatch::Static middleware used by Rails,
+  # which is not capable of serving the gzipped assets created by the rake assets:precompile task.
+  # rack-zippy will serve non-gzipped assets where they are not available or not supported by the requesting client
+  gem 'rack-zippy'
+  gem 'rails_12factor', group: :production
+
+  # Use unicorn as the app server
+  # gem 'unicorn'
+
+  # Deploy with Capistrano
+  # gem 'capistrano'

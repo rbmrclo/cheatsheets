@@ -1,4 +1,3 @@
-
 source 'https://rubygems.org'
 
   gem 'rails', '3.2.11'
@@ -69,6 +68,7 @@ source 'https://rubygems.org'
 
   # Notifier
   # gem 'alertify-rails'
+  # gem 'vex_rails'
 
   # MORE UI/UX STUFF
   #
