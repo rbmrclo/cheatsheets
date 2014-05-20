@@ -1,0 +1,15 @@
+.truncate {
+  /* Truncate a string with ellipsis */
+
+  /* You can set width on a element or here */
+  /* width: 250px; */
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  -o-text-overflow: ellipsis;  /* Opera */
+  -ms-text-overflow: ellipsis; /* IE 8 */
+}
+
+
